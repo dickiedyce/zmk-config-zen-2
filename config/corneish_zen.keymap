@@ -17,7 +17,7 @@
                 label = "TAP_DANCE_H";
                 #binding-cells = <0>;
                 tapping-term-ms = <200>;
-                bindings = <&kp H>, <&kp N3>, <&kp N3>, <&kp LPAR>;
+                bindings = <&mt LPAR H>, <&kp N3>;
                 };
         };
 
