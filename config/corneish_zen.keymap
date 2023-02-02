@@ -11,38 +11,6 @@
 
 / {
 
-        behaviors {
-                td_a: tap_dance_a {
-                        compatible = "zmk,behavior-tap-dance";
-                        label = "TAP_DANCE_A";
-                        #binding-cells = <0>;
-                        tapping-term-ms = <200>;
-                        bindings = <&mt LBKT A>, <&kp N1>;
-                };
-                td_s: tap_dance_s {
-                        compatible = "zmk,behavior-tap-dance";
-                        label = "TAP_DANCE_S";
-                        #binding-cells = <0>;
-                        tapping-term-ms = <200>;
-                        bindings = <&mt RBKT S>, <&kp N2>;
-                };
-                td_h: tap_dance_h {
-                        compatible = "zmk,behavior-tap-dance";
-                        label = "TAP_DANCE_H";
-                        #binding-cells = <0>;
-                        tapping-term-ms = <200>;
-                        bindings = <&mt LPAR H>, <&kp N3>;
-                };
-                td_t: tap_dance_t {
-                        compatible = "zmk,behavior-tap-dance";
-                        label = "TAP_DANCE_T";
-                        #binding-cells = <0>;
-                        tapping-term-ms = <200>;
-                        bindings = <&mt RPAR T>, <&kp N4>;
-                };
-
-        };
-
         keymap {
                 compatible = "zmk,keymap";
 
@@ -54,9 +22,9 @@
 // | SHFT |  Z  |  X  |  M  |  C  |  V  |   |  K  |  L   |  ,  |  .  |  /  | CTRL  |
 //                    | LWR | GUI | SPC |   | ENT | RSE  | ALT |
                         bindings = <
-   &kp TAB   &kp Q &kp D &mt LBRC R &mt RBRC W &kp B      &kp J &kp F  &kp U     &kp P   &kp SEMI &kp ESC
-   &kp BSPC  &td_a &td_s &td_h      &td_t      &kp G      &kp Y &kp N  &kp E     &kp O   &kp I    &kp SQT
-   &kp LSHFT &kp Z &kp X &kp M      &kp C      &kp V      &kp K &kp L  &kp COMMA &kp DOT &kp FSLH &kp RCTRL
+   &kp TAB   &kp Q      &kp D      &mt LBRC R &mt RBRC W &kp B      &kp J &kp F  &kp U     &kp P   &kp SEMI &kp ESC
+   &kp BSPC  &mt LBKT A &mt RBKT S &mt LPAR H &mt RPAR T &kp G      &kp Y &kp N  &kp E     &kp O   &kp I    &kp SQT
+   &kp LSHFT &kp Z      &kp X      &kp M      &kp C      &kp V      &kp K &kp L  &kp COMMA &kp DOT &kp FSLH &kp RCTRL
                   &mo 1 &kp LGUI &kp SPACE                &kp RET &mo 2 &kp RALT
                         >;
                 };
