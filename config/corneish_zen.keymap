@@ -10,21 +10,21 @@
 };
 
 / {
-
+        behaviors {
+                gqt: global-quick-tap {
+                compatible = "zmk,behavior-hold-tap";
+                label = "GLOBAL_QUICK_TAP";
+                #binding-cells = <2>;
+                flavor = "tap-preferred";
+                tapping-term-ms = <200>;
+                quick-tap-ms = <125>;
+                global-quick-tap;
+                bindings = <&kp>, <&kp>;
+                };
+        };
         keymap {
                 compatible = "zmk,keymap";
-                behaviors {
-                        qt: global-quick-tap {
-                        compatible = "zmk,behavior-hold-tap";
-                        label = "GLOBAL_QUICK_TAP";
-                        #binding-cells = <2>;
-                        flavor = "tap-preferred";
-                        tapping-term-ms = <200>;
-                        quick-tap-ms = <125>;
-                        global-quick-tap;
-                        bindings = <&kp>, <&kp>;
-                        };
-                };
+                
                 default_layer {
                         label = "QDRWB";
 // -----------------------------------------------------------------------------------------
@@ -33,9 +33,9 @@
 // | SHFT |  Z  |  X  |  M  |  C  |  V  |   |  K  |  L   |  ,  |  .  |  /  | CTRL  |
 //                    | LWR | GUI | SPC |   | ENT | ALT  |  ~  |
                         bindings = <
-   &qt LS(TAB) TAB  &qt LBKT Q   &qt RBKT D  &qt LPAR R  &qt RPAR W  &qt PIPE B               &qt BSLH J  &qt EQUAL F  &qt MINUS U   &qt PLUS P  &qt COLON SEMI  &kp ESC
-   &qt DEL BSPC     &qt N1 A     &qt N2 S    &qt N3 H    &qt N4 T    &qt N5 G                 &qt N6 Y    &qt N7 N     &qt N8 E      &qt N9 O    &qt N0 I        &qt GRAVE SQT
-   &kp LSHFT        &qt LBKT Z   &qt RBKT X  &qt LPAR M  &qt RPAR C  &qt LC(LA(LG(LS(N)))) V  &qt LBRC K  &qt RBRC L   &qt LT COMMA  &qt GT DOT  &qt QMARK FSLH  &kp RCTRL
+   &gqt LS(TAB) TAB  &gqt LBKT Q   &gqt RBKT D  &gqt LPAR R  &gqt RPAR W  &gqt PIPE B               &gqt BSLH J  &gqt EQUAL F  &gqt MINUS U   &gqt PLUS P  &gqt COLON SEMI  &kp ESC
+   &gqt DEL BSPC     &gqt N1 A     &gqt N2 S    &gqt N3 H    &gqt N4 T    &gqt N5 G                 &gqt N6 Y    &gqt N7 N     &gqt N8 E      &gqt N9 O    &gqt N0 I        &gqt GRAVE SQT
+   &kp LSHFT        &gqt LBKT Z   &gqt RBKT X  &gqt LPAR M  &gqt RPAR C  &gqt LC(LA(LG(LS(N)))) V  &gqt LBRC K  &gqt RBRC L   &gqt LT COMMA  &gqt GT DOT  &gqt QMARK FSLH  &kp RCTRL
                     &mo 1        &kp LGUI    &lt 1 SPACE                                                  &kp RET      &kp RALT      &kp TILDE 
                         >;
                 };
