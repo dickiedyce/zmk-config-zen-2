@@ -22,8 +22,8 @@
 // | SHFT |  Z  |  X  |  M  |  C  |  V  |   |  K  |  L   |  ,  |  .  |  /  | CTRL  |
 //                    | LWR | GUI | SPC |   | ENT | ALT  |  ~  |
                         bindings = <
-   &mt LS(TAB) TAB  &mt N1 Q   &mt N2 D   &mt N3 R   &mt N4 W         &mt N5 B                 &mt N6 J    &mt N7 F     &mt N8 U     &mt N9 P    &mt N0 SEMI  &kp ESC
-   &mt DEL BSPC     &mt LBKT A &mt RBKT S &mt LPAR H &mt RPAR T       &mt PIPE G               &mt BSLH Y  &mt EQUAL N  &mt MINUS E  &mt LBRC O  &mt RBRC I   &mt GRAVE SQT
+   &mt LS(TAB) TAB  &mt LBKT Q   &mt RBKT D   &mt LPAR R   &mt RPAR W  &mt PIPE B    &mt BSLH J    &mt EQUAL F     &mt MINUS U     &mt LBRC P    &mt GRAVE SEMI  &kp ESC
+   &mt DEL BSPC     &mt N1 A &mt N2 S &mt N3 H &mt N4 T       &mt N5 G               &mt N6 Y  &mt N7 N  &mt N8 E  &mt N9 O  &mt N0 I   &mt GRAVE SQT
    &kp LSHFT        &kp Z      &kp X      &kp M      &mt LC(LS(C)) C  &mt LC(LA(LG(LS(N)))) V  &kp K       &kp L        &kp COMMA    &kp DOT     &kp FSLH     &kp RCTRL
                     &mo 1 &kp LGUI &kp SPACE                                                               &kp RET &kp RALT &kp TILDE 
                         >;
