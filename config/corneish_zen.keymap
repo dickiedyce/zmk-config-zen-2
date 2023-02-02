@@ -22,10 +22,10 @@
 // | SHFT |  Z  |  X  |  M  |  C  |  V  |   |  K  |  L   |  ,  |  .  |  /  | CTRL  |
 //                    | LWR | GUI | SPC |   | ENT | ALT  |  ~  |
                         bindings = <
-   &kp TAB   &mt N1 Q   &mt N2 D   &mt N3 R   &mt N4 W   &mt N5 B      &mt N6 J    &mt N7 F     &mt N8 U     &mt N9 P    &mt N0 SEMI  &kp ESC
-   &kp BSPC  &mt LBKT A &mt RBKT S &mt LPAR H &mt RPAR T &mt PIPE G    &mt BSLH Y  &mt EQUAL N  &mt MINUS E  &mt LBRC O  &mt RBRC I   &mt GRAVE SQT
-   &kp LSHFT &kp Z      &kp X      &kp M      &kp C      &kp V         &kp K       &kp L        &kp COMMA    &kp DOT     &kp FSLH     &kp RCTRL
-                  &mo 1 &kp LGUI &kp SPACE                                       &kp RET &kp RALT &kp TILDE 
+   &mt LS(TAB) TAB    &mt N1 Q   &mt N2 D   &mt N3 R   &mt N4 W   &mt N5 B                 &mt N6 J    &mt N7 F     &mt N8 U     &mt N9 P    &mt N0 SEMI  &kp ESC
+   &mt LS(BSPC) BSPC  &mt LBKT A &mt RBKT S &mt LPAR H &mt RPAR T &mt PIPE G               &mt BSLH Y  &mt EQUAL N  &mt MINUS E  &mt LBRC O  &mt RBRC I   &mt GRAVE SQT
+   &kp LSHFT          &kp Z      &kp X      &kp M      &kp C      &mt LC(LA(LG(LS(N)))) V  &kp K       &kp L        &kp COMMA    &kp DOT     &kp FSLH     &kp RCTRL
+                  &mo 1 &kp LGUI &kp SPACE                                                 &kp RET &kp RALT &kp TILDE 
                         >;
                 };
                 lower_layer {
