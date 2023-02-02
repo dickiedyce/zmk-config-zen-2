@@ -12,32 +12,32 @@
 / {
 
         behaviors {
-                td0: tap_dance_a {
+                td_a: tap_dance_a {
                         compatible = "zmk,behavior-tap-dance";
                         label = "TAP_DANCE_A";
                         #binding-cells = <0>;
-                        tapping-term-ms = <150>;
+                        tapping-term-ms = <200>;
                         bindings = <&mt LBKT A>, <&kp N1>;
                 };
-                td1: tap_dance_s {
+                td_s: tap_dance_s {
                         compatible = "zmk,behavior-tap-dance";
                         label = "TAP_DANCE_S";
                         #binding-cells = <0>;
-                        tapping-term-ms = <150>;
+                        tapping-term-ms = <200>;
                         bindings = <&mt RBKT S>, <&kp N2>;
                 };
-                td2: tap_dance_h {
+                td_h: tap_dance_h {
                         compatible = "zmk,behavior-tap-dance";
                         label = "TAP_DANCE_H";
                         #binding-cells = <0>;
-                        tapping-term-ms = <150>;
+                        tapping-term-ms = <200>;
                         bindings = <&mt LPAR H>, <&kp N3>;
                 };
-                td3: tap_dance_t {
+                td_t: tap_dance_t {
                         compatible = "zmk,behavior-tap-dance";
                         label = "TAP_DANCE_T";
                         #binding-cells = <0>;
-                        tapping-term-ms = <150>;
+                        tapping-term-ms = <200>;
                         bindings = <&mt RPAR T>, <&kp N4>;
                 };
         };
@@ -54,7 +54,7 @@
 //                    | LWR | GUI | SPC |   | ENT | RSE  | ALT |
                         bindings = <
    &kp TAB   &kp Q &kp D &kp R &kp W &kp B   &kp J &kp F  &kp U     &kp P   &kp SEMI &kp ESC
-   &kp BSPC  &td0  &td1  &td2  &td3  &kp G   &kp Y &kp N  &kp E     &kp O   &kp I    &kp SQT
+   &kp BSPC  &td_a &td_s &td_h &td_t &kp G   &kp Y &kp N  &kp E     &kp O   &kp I    &kp SQT
    &kp LSHFT &kp Z &kp X &kp M &kp C &kp V   &kp K &kp L  &kp COMMA &kp DOT &kp FSLH &kp RCTRL
                   &mo 1 &kp LGUI &kp SPACE   &kp RET &mo 2 &kp RALT
                         >;
