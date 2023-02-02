@@ -13,7 +13,18 @@
 
         keymap {
                 compatible = "zmk,keymap";
-
+                behaviors {
+                        qt: global-quick-tap {
+                        compatible = "zmk,behavior-hold-tap";
+                        label = "GLOBAL_QUICK_TAP";
+                        #binding-cells = <2>;
+                        flavor = "tap-preferred";
+                        tapping-term-ms = <200>;
+                        quick-tap-ms = <125>;
+                        global-quick-tap;
+                        bindings = <&kp>, <&kp>;
+                        };
+                };
                 default_layer {
                         label = "QDRWB";
 // -----------------------------------------------------------------------------------------
@@ -22,9 +33,9 @@
 // | SHFT |  Z  |  X  |  M  |  C  |  V  |   |  K  |  L   |  ,  |  .  |  /  | CTRL  |
 //                    | LWR | GUI | SPC |   | ENT | ALT  |  ~  |
                         bindings = <
-   &lt LS(TAB) TAB  &lt LBKT Q   &lt RBKT D  &lt LPAR R  &lt RPAR W  &lt PIPE B               &lt BSLH J  &lt EQUAL F  &lt MINUS U   &lt PLUS P  &lt COLON SEMI  &kp ESC
-   &lt DEL BSPC     &lt N1 A     &lt N2 S    &lt N3 H    &lt N4 T    &lt N5 G                 &lt N6 Y    &lt N7 N     &lt N8 E      &lt N9 O    &lt N0 I        &lt GRAVE SQT
-   &kp LSHFT        &lt LBKT Z   &lt RBKT X  &lt LPAR M  &lt RPAR C  &lt LC(LA(LG(LS(N)))) V  &lt LBRC K  &lt RBRC L   &lt LT COMMA  &lt GT DOT  &lt QMARK FSLH  &kp RCTRL
+   &qt LS(TAB) TAB  &qt LBKT Q   &qt RBKT D  &qt LPAR R  &qt RPAR W  &qt PIPE B               &qt BSLH J  &qt EQUAL F  &qt MINUS U   &qt PLUS P  &qt COLON SEMI  &kp ESC
+   &qt DEL BSPC     &qt N1 A     &qt N2 S    &qt N3 H    &qt N4 T    &qt N5 G                 &qt N6 Y    &qt N7 N     &qt N8 E      &qt N9 O    &qt N0 I        &qt GRAVE SQT
+   &kp LSHFT        &qt LBKT Z   &qt RBKT X  &qt LPAR M  &qt RPAR C  &qt LC(LA(LG(LS(N)))) V  &qt LBRC K  &qt RBRC L   &qt LT COMMA  &qt GT DOT  &qt QMARK FSLH  &kp RCTRL
                     &mo 1        &kp LGUI    &lt 1 SPACE                                                  &kp RET      &kp RALT      &kp TILDE 
                         >;
                 };
