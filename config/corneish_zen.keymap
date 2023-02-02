@@ -14,14 +14,14 @@
                 compatible = "zmk,keymap";
 
                 default_layer {
-                        label = "QWERTY";
+                        label = "QDRWB";
 // -----------------------------------------------------------------------------------------
 // | BSPC |  Q  |  D  |  R  |  W  |  B  |   |  J  |  F   |  U  |  P  |  ;  | ESC  |
 // | SHFT |  A  |  S  |  H  |  T  |  G  |   |  Y  |  N   |  E  |  O  |  I  |  '   |
 // | CTRL |  Z  |  X  |  M  |  C  |  V  |   |  K  |  L   |  ,  |  .  |  /  | TAB  |
 //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
                         bindings = <
-   &kp BSPC  &kp Q &kp D &kp R &kp W &kp B   &kp J &kp F  &kp U     &kp P   &kp ;    &kp ESC
+   &kp BSPC  &kp Q &kp D &kp R &kp W &kp B   &kp J &kp F  &kp U     &kp P   &kp SEMI &kp ESC
    &kp LSHFT &kp A &kp S &kp H &kp T &kp G   &kp Y &kp N  &kp E     &kp O   &kp I    &kp SQT
    &kp LCTRL &kp Z &kp X &kp M &kp C &kp V   &kp K &kp L  &kp COMMA &kp DOT &kp FSLH &kp TAB
                   &kp LGUI &mo 1 &kp SPACE   &kp RET &mo 2 &kp RALT
