@@ -1,3 +1,7 @@
+## Current Layout
+
+![Corne-ish Zen Logo](img/my_keymap.svg)
+
 # Corne-ish Zen V2 Custom Configuration
 
 ![Corne-ish Zen Logo](img/Zen_R3_sticker.png)
