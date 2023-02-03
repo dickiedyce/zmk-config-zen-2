@@ -2,10 +2,6 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
-#define WORKMAN 0
-#define FN 1
-#define GAMING 2
-
 / {
   chosen {
     zmk,matrix_transform = &default_transform;
@@ -39,31 +35,21 @@
    &gqt LS(TAB) TAB  &gqt LBKT Q   &gqt RBKT D  &gqt LPAR R  &gqt RPAR W  &gqt PIPE B               &gqt BSLH J  &gqt EQUAL F  &gqt MINUS U   &gqt PLUS P  &gqt COLON SEMI  &kp ESC
    &gqt DEL BSPC     &gqt N1 A     &gqt N2 S    &gqt N3 H    &gqt N4 T    &gqt N5 G                 &gqt N6 Y    &gqt N7 N     &gqt N8 E      &gqt N9 O    &gqt N0 I        &gqt GRAVE SQT
    &kp  LSHFT        &gqt LBKT Z   &gqt RBKT X  &gqt LPAR M  &gqt RPAR C  &gqt LC(LA(LG(LS(N)))) V  &gqt LBRC K  &gqt RBRC L   &gqt LT COMMA  &gqt GT DOT  &gqt QMARK FSLH  &kp RCTRL
-                     &kp RALT      &kp LGUI     &lt FN SPACE                                                      &kp RET       &mo FN          &kp TILDE 
+                &mo 1        &kp LGUI    &lt 1 SPACE                                                  &kp RET      &kp RALT      &kp TILDE 
                         >;
                 };
                 lower_layer {
-                        label = "FN";
+                        label = "NUMBER";
 // -----------------------------------------------------------------------------------------
-// | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   |     |      |       |       |     |      |
-// | BSPC | F1  | F2  | F3  | F4  | F5  |   |     | LFT  | DWN   |  UP   | RGT |      |
-// | SHFT | F6  | F7  | F8  | F9  | F10 |   |     | HOME | PG_DN | PG_UP | END |      |
-//                    |     |     |     |   |     |      |       |
+// | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
+// | BSPC |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  |      |
+// | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
+//                    |     | GUI | SPC |   | ENT | ALT |     |
                         bindings = <
-   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4     &to GAME  &trans    &trans     &trans     &trans     &trans
-   &kp BSPC   &kp F1       &kp F2       &kp F3       &kp F4       &kp F5           &trans    &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &trans
-   &kp LSHFT  &kp F6       &kp F7       &kp F8       &kp F9       &kp F10          &trans    &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &trans
-                                        &trans       &trans       &trans           &trans    &trans    &trans 
-                        >;
-                };
-
-                gaming {
-                        label = "QWERTY";
-                        bindings = <
-   &kp TAB   &kp Q &kp W &kp E &kp R &kp T    &kp Y &kp U &kp I    &kp O   &kp P    &kp BKSP
-   &kp LALT  &kp A &kp S &kp D &kp F &kp G    &kp H &kp J &kp K    &kp L   &kp QUOT &kp ENTER
-   &kp LSHFT &kp Z &kp X &kp C &kp V &kp B    &kp N &kp M &kp CMMA &kp DOT &kp FSLH &kp RSFT
-              &kp LCTL &to WORKMAN &kp SPC    &kp SPC &to FN &kp F13
+   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4     &trans   &trans    &trans     &trans     &trans     &trans
+   &kp BSPC   &kp F1       &kp F2       &kp F3       &kp F4       &kp F5           &trans   &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &trans
+   &kp LSHFT  &kp F6       &kp F7       &kp F8       &kp F9       &kp F10          &trans   &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &trans
+                                        &trans       &kp LGUI     &trans           &trans   &trans    &trans 
                         >;
                 };
         };
