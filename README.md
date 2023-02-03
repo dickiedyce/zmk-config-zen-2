@@ -19,7 +19,7 @@ V2 PCBs were only used in the 3rd GB round (R3). To confirm which version you ne
 - The [official ZMK Firmware GitHub](https://github.com/zmkfirmware/zmk) repository. View the keymaps for other boards and shields as a starting point for your keymap.
 - The [official ZMK Documentation](https://zmk.dev/docs) web site. Find the answers to many of your questions about ZMK Firmware.
 - The [official ZMK Discord Server](https://discord.gg/8cfMkQksSB). Instant conversations with other ZMK developers and users. Great technical resource!
-
+- Cem Aksoylar's [caksoylar/keymap-drawer](https://github.com/caksoylar/keymap-drawer) tool. Tool for drawing layouts.
 ## Instructions
 
 1. Log into, or sign up for, your personal GitHub account.
