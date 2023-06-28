@@ -32,9 +32,9 @@
 // | SHFT |  Z  |  X  |  M  |  C  |  V  |   |  K  |  L   |  ,  |  .  |  /  | CTRL  |
 //                    | ALT | GUI | SPC |   | ENT | LWR  |  ~  |
                         bindings = <
-   &gqt LS(TAB) TAB  &kp Q         &gqt LC(LA(LG(LS(D)))) D  &kp R        &kp W        &gqt PIPE B               &gqt BSLH J  &gqt EQUAL F  &gqt MINUS U   &gqt PLUS P  &gqt COLON SEMI  &kp ESC
-   &gqt DEL BSPC     &gqt N1 A     &gqt N2 S                 &gqt N3 H    &gqt N4 T    &gqt N5 G                 &gqt N6 Y    &gqt N7 N     &gqt N8 E      &gqt N9 O    &gqt N0 I        &gqt GRAVE SQT
-   &kp  LSHFT        &gqt LBKT Z   &gqt RBKT X               &gqt LPAR M  &gqt RPAR C  &gqt LC(LA(LG(LS(N)))) V  &gqt LBRC K  &gqt RBRC L   &gqt LT COMMA  &gqt GT DOT  &gqt QMARK FSLH  &kp RCTRL
+   &gqt LS(TAB) TAB  &kp Q         &gqt LC(LA(LG(LS(D)))) D  LC(LA(LG(LS(R)))) R  &kp W        &gqt PIPE B               &gqt BSLH J  &gqt EQUAL F  &gqt MINUS U   &gqt PLUS P  &gqt COLON SEMI  &kp ESC
+   &gqt DEL BSPC     &gqt N1 A     &gqt N2 S                 &gqt N3 H            &gqt N4 T    &gqt N5 G                 &gqt N6 Y    &gqt N7 N     &gqt N8 E      &gqt N9 O    &gqt N0 I        &gqt GRAVE SQT
+   &kp  LSHFT        &gqt LBKT Z   &gqt RBKT X               &gqt LPAR M          &gqt RPAR C  &gqt LC(LA(LG(LS(N)))) V  &gqt LBRC K  &gqt RBRC L   &gqt LT COMMA  &gqt GT DOT  &gqt QMARK FSLH  &kp RCTRL
                      &kp RALT      &kp LGUI     &lt 1 SPACE                                                      &kp RET       &mo 1          &kp TILDE 
                         >;
                 };
