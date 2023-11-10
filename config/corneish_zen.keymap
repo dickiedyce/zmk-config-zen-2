@@ -26,7 +26,7 @@
         Dda: Dda {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp D &kp D &kp A>;
+            bindings = <&kp SEMI &kp D &kp D &kp A>;
             label = "DDA";
         };
     };
