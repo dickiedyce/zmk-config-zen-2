@@ -33,14 +33,14 @@
         pw_1: pw_1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp Z &kp A &kp Q &kp N1 &kp LS(X) &kp LS(S) &kp LS(D) &kp AT>;
+            bindings = <&kp Z &kp A &kp Q &kp N1 &kp LS(X) &kp LS(S) &kp LS(D) &kp AT>;
             label = "PW_1";
         };
 
         pw_2: pw_2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp LS(Q) &kp A &kp Z &kp EXCL &kp N5 &kp N4 &kp N3 &kp N5 &kp N1 &kp N5>;
+            bindings = <&kp LS(Q) &kp A &kp Z &kp EXCL &kp N5 &kp N4 &kp N3 &kp N5 &kp N1 &kp N5>;
             label = "PW_2";
         };
     };
