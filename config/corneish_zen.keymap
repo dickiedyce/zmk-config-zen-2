@@ -29,6 +29,20 @@
             bindings = <&kp D &kp D &kp A &kp SPACE>;
             label = "DDA";
         };
+
+        pw_1: pw_1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp Z &kp A &kp Q &kp N1 &kp LS(X) &kp LS(S) &kp LS(D) &kp AT>;
+            label = "PW_1";
+        };
+
+        pw_2: pw_2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp LS(Q) &kp A &kp Z &kp EXCL &kp N5 &kp N4 &kp N3 &kp N5 &kp N1 &kp N5>;
+            label = "PW_2";
+        };
     };
 
     combos {
@@ -80,7 +94,7 @@
             //                    |     |     |     |   |     |      |       |
 
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &Dda      &trans     &trans     &trans     &kp C_VOL_UP
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &Dda      &pw_2      &pw_1      &trans     &kp C_VOL_UP
 &trans      &kp F1        &kp F2        &kp F3        &kp F4        &kp F5          &trans  &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &kp K_MUTE
 &trans      &kp F6        &kp F7        &kp F8        &kp F9        &kp F10         &trans  &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &kp C_VOLUME_DOWN
                                         &trans        &trans        &trans          &trans  &trans    &trans
