@@ -94,10 +94,10 @@
             //                    |     |     |     |   |     |      |       |
 
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &Dda      &pw_2      &pw_1      &trans     &kp C_VOL_UP
-&trans      &kp F1        &kp F2        &kp F3        &kp F4        &kp F5          &trans  &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &kp K_MUTE
-&trans      &kp F6        &kp F7        &kp F8        &kp F9        &kp F10         &trans  &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &kp C_VOLUME_DOWN
-                                        &trans        &trans        &trans          &trans  &trans    &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp C_VOLUME_UP  &Dda      &pw_2      &pw_1      &trans     &trans
+&trans      &kp F1        &kp F2        &kp F3        &kp F4        &kp F5          &kp K_MUTE       &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &trans
+&trans      &kp F6        &kp F7        &kp F8        &kp F9        &kp F10         &kp C_VOL_DN     &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &trans
+                                        &trans        &trans        &trans          &trans           &trans    &trans
             >;
         };
     };
