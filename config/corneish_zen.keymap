@@ -47,7 +47,7 @@
         pw_3: pw_3 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp P &kp W &kp UNDER &kp N3>;
+            bindings = <&kp P &kp W &kp UNDER &kp N3>;
             label = "PW_3";
         };
     };
